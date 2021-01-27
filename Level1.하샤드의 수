@@ -1,0 +1,7 @@
+def solution(x):
+    def sum_digit(number):
+        return sum([int(i)for i in str(number)])
+    if x % sum_digit(x) != 0:
+        return False
+    
+    return True
